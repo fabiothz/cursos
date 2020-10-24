@@ -38,7 +38,7 @@
 }
 
 fragment usuarioCompleto on Usuario {
-  id nome email idade salario vip
+  id nome email idade salario vip status
   perfil {
     nome id
   }
