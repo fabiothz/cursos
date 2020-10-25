@@ -1,4 +1,4 @@
-const { usuarios, proximoId } = require('../data/db');
+const { usuarios, proximoId } = require('../../data/db');
 
 function indiceUsuario(filtro) {
     if (!filtro) return -1;
@@ -13,7 +13,7 @@ function indiceUsuario(filtro) {
 
 module.exports = {
     // { nome, email, idade }
-novoUsuario(_, { dados }) {
+    novoUsuario(_, { dados }) {
 
         const emailExiste = usuarios.some(u => u.email == dados.email);
 
